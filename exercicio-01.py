@@ -22,7 +22,7 @@ igual = 5==3
 diferente =5!=3
 maior =5>3
 menor = 5<3
-print("igual é",FALSE,"diferenca é"True)
+print("igual é",FALSE,"diferenca é",True,"maior é",True,"menor é",True)
 #operadores logicos
 e = True and False
 ou = True or False
