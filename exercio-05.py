@@ -1,5 +1,12 @@
-usuarios ={'Maria':10101,'rafa':11001,'jonas':11010}
-nome_usuario = input("insira seu nome:\n")
+usuarios ={
+    'usuario1': 'usuario1',
+    'usuario2': 'usuario22',
+    'usuario3': 'usuario33'
+    }
+usuario = input("insira seu usuario:\n")
+senha = input("insira sua senha:\n")
 
-
-if nome_usuario 
+if usuarios in usuarios and usuarios[usuario] == senha:
+    print(usuario)
+else:
+    print("usuario não existe")  
