@@ -1,7 +1,10 @@
 import pandas as PD
-data ={
-    "apples":[3,2,1,0],
-    "oranges":[0,3,7,2]
+dados ={
+    "nome":["maria","paulo","joão","rafa"],
+    "idade":[30,20,29,23],
+    "cidade":[ "camaçari","são paulo","santo andré", "são caetano do sul"]
 }
-tabela = PD.dataframe(data)
-print(tabela)
+df = PD.DataFrame(dados)
+for dado in df.values:
+      print(dado[0],dado[1])
+
