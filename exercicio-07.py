@@ -12,11 +12,17 @@ dados_produtos = {
     'Vendas': [50, 35, 45, 70, 60],
     'Mês': ['Janeiro', 'Janeiro', 'Fevereiro', 'Janeiro', 'Fevereiro']
 }
+#DATAFRAME -> é uma maneira de rerpresentar e trabalhar dados como tabuliares,
+# pode ser visto como tabela que organiza os dados em linhas e colunas criando uma estrutura bidimencional
+
 df = PD.DataFrame(dados_produtos)
 
 # produto mais vendido no mes Janeiro #
 produto_mais_vendido_janeiro = df[df['Mês'] == 'Janeiro']['Produto'].value_counts().idxmax()
 
+#IDXMAX-> retorna o indice da primeira ocorrencia do maximo sobre o eixo do solicitado 
+
+# value_count -> para contar o numero de ocorrencias de cada produto em todo DATAFRAME
  
 # aumento percentual de camisetas de Janeiro pra Fevereiro #
 vendas_camisetas_janeiro = df[(df['Produto'] == 'Camiseta') & (df['Mês'] == 'Janeiro')]['Vendas'].sum()

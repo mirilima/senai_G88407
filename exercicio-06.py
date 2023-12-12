@@ -9,7 +9,9 @@ menu = {
 # armazenar o pedido do cliente
 pedido = {}
 # para exibir o menu
-def exibir_menu():
+def exibir_menu(): 
+    #DEF -> é uma palavra-chave para definir funções,
+    #é usado para definir uma fução personalizada e permite que voce agrupe um conjunto de instuções
 
     print("Menu:")
     for item, preco in menu.items():
@@ -48,8 +50,13 @@ def calcular_total():
     for item, quantidade in pedido.items():
         total += quantidade * menu[item]
     print(f"Total do pedido: R${total}")
+
 # Menu principal
+
+# WHILE -> palavra-chave para criar um loop que executa um bloco de código repetidamente 
+#  em quanto uma condição for verdadeira quando a condição se torna falsa  a execusão do loop é imterropida
 while True:
+
     print("\nMenu Principal:\n")
     print("1. Exibir Menu")
     print("2. Adicionar Item ao Pedido")
